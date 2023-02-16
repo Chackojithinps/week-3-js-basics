@@ -51,6 +51,32 @@
     //       console.log(index)
     // })
 
+    // const myObj={
+    //     name:"jithin",
+    //     age:23,
+    //     cars:[
+    //         {name:"audi",models:["Fiesta", "Focus", "Mustang"]},
+    //         {name:"benz",models:["320", "X3", "X5"]},
+    //         {name:"rangerover",models:["500", "Panda"]},
+    //     ]
+    // }
+    // console.log(myObj.cars)
+    // console.log(myObj.cars[2].models);
+    // myObj.cars.forEach(function(value,index){
+    //     console.log(value.models[1])
+    // })
+
+    // const myObj1=[
+    //     {name:"jithin",age:23,place:"kannur"},
+    // ]
+    // console.log(myObj1)
+    // console.log(myObj1.name)
+    // myObj1.forEach(function(value,index){   provide wrong answer
+    //     console.log(value)
+    // })
+
+    // To access arrays inside arrays, use a for-in loop for each array:
+
     const myObj={
         name:"jithin",
         age:23,
@@ -60,20 +86,12 @@
             {name:"rangerover",models:["500", "Panda"]},
         ]
     }
-    console.log(myObj.cars)
-    console.log(myObj.cars[2].models);
-    myObj.cars.forEach(function(value,index){
-        console.log(value.models[1])
-    })
 
-    const myObj1=[
-        {name:"jithin",age:23,place:"kannur"},
-    ]
-    console.log(myObj1)
-    console.log(myObj1.name)
-    // myObj1.forEach(function(value,index){   provide wrong answer
-    //     console.log(value)
-    // })
+    for(let i in myObj.cars){
+        console.log(myObj.cars[i].models)
+        console.log(myObj.cars[i].models[0]);
+    }
+
 
    </script>
 </html>
