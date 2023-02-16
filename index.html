@@ -8,6 +8,11 @@
 </head>
 <body>
     <p id="demo"></p>
+    <h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
 </body>
    <script>
 
@@ -92,17 +97,18 @@
     //     console.log(myObj.cars[i].models[0]);
     // }
 
-    const myObj={
-        name:"jithin",
-        age:17,
-        about:function(){
-           console.log(this.name+" "+this.age);
-        }
-    }
-    console.log(myObj);
-    myObj.about()
+    // const myObj={
+    //     name:"jithin",
+    //     age:17,
+    //     about:function(){
+    //        console.log(this.name+" "+this.age);
+    //     }
+    // }
+    // console.log(myObj);
+    // myObj.about()
     // var c=myObj.about()
     // console.log(c)
 
+    document.write("Hello")
    </script>
 </html>
